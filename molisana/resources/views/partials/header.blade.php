@@ -1,9 +1,8 @@
 <header>
-  <h1>Header prova</h1>
 
   <div class="logo">
     {{-- recupero nome img con asset --}}
-    <img src="{{ asset('img/logo.jpg')}}" alt="">
+    <img src="{{ asset('img/logo.png')}}" alt="">
   </div>
 
   <div class="menu">

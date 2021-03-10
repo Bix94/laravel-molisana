@@ -1,7 +1,8 @@
 // dentro sass prendo img da RESOURCES
 
-.foto-principale{
-  height: 300px;
+.jumbo{
   // esco da cartella partials e cartella sass con ../
-  // background-image: url('../../img/molisana-home.jpg);
+  background-image: url('../../img/fondo-pag-speciali.jpg');
+  height: 500px;
+  width: 500px;
 }

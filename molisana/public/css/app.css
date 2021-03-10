@@ -4,7 +4,29 @@
   box-sizing: border-box;
 }
 
-.foto-principale {
-  height: 300px;
+header {
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  color: #002d75;
+}
+
+header a:hover {
+  background-color: #b3e5fc;
+}
+
+.jumbo {
+  background-image: url(/images/fondo-pag-speciali.jpg?06a79f19fbb4489a17e2dff67ce37137);
+  height: 500px;
+  width: 500px;
+}
+
+footer {
+  height: 150px;
+  background-color: #b3e5fc;
 }
 
