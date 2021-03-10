@@ -20,13 +20,57 @@ header a:hover {
 }
 
 .jumbo {
-  background-image: url(/images/fondo-pag-speciali.jpg?06a79f19fbb4489a17e2dff67ce37137);
+  background-image: url(/images/molisana-home.jpg?cb7db241726fb646d7e1c8553429c07c);
+  background-position: center;
+  background-size: cover;
   height: 500px;
-  width: 500px;
+  margin-top: 10px;
+}
+
+.schede {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.schede .scheda {
+  position: relative;
+  width: calc(100% / 3);
+}
+
+.schede .scheda:hover {
+  opacity: 0.5;
+}
+
+.schede .scheda img {
+  max-width: 100%;
+}
+
+.schede .scheda .over {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-30px);
+  left: 50px;
+}
+
+.schede .scheda:hover .over {
+  display: block;
+}
+
+.schede .scheda a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
 }
 
 footer {
-  height: 150px;
+  text-align: center;
+  height: 100px;
   background-color: #b3e5fc;
+}
+
+footer h5 {
+  padding-top: 40px;
 }
 

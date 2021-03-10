@@ -1,8 +1,43 @@
 // dentro sass prendo img da RESOURCES
-
-.jumbo{
+  .jumbo{
   // esco da cartella partials e cartella sass con ../
-  background-image: url('../../img/fondo-pag-speciali.jpg');
+  background-image: url('../../img/molisana-home.jpg');
+  background-position: center;
+  background-size: cover;
   height: 500px;
-  width: 500px;
+  margin-top: 10px;
+}
+
+
+.schede{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .scheda{
+    position: relative;
+    width: calc(100% / 3);
+
+    &:hover{
+      opacity: 0.5;
+    }
+    img{
+      max-width: 100%;
+    }
+    .over{
+      display: none;
+      position: absolute;
+      top: 50%;
+	    transform: translateY(-30px);
+      left: 50px;
+    }
+    &:hover .over{
+      display: block;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      font-size: 30px;
+    }
+  }
 }

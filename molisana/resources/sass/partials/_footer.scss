@@ -1,4 +1,9 @@
 footer{
-  height: 150px;
+  text-align: center;
+  height: 100px;
   background-color: $menu-hover-color;
+
+  h5{
+    padding-top: 40px;
+  }
 }

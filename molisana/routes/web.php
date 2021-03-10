@@ -146,6 +146,6 @@ Route::get('/prodotti', function () {
             ]
          ];
          // Passo chiave con array associativo per andare a lavorare e passare FORMATI
-         $data = [ 'formati' => $pasta ] ;
-    return view('products' , $pasta);
+         $data = ['formati' => $pasta];
+    return view('products' , $data  );
 })->name('pagina-prodotti');

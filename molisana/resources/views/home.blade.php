@@ -4,8 +4,9 @@
 @section('title','sezione home')
 
 @section ('content')
-  <h5> sono nella home </h5>
-  <div class="jumbo">
+  <main>
+    <div class="jumbo">
 
-  </div>
+    </div>
+  </main>
 @endsection

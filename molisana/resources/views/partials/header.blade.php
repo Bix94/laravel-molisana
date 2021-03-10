@@ -12,10 +12,4 @@
     <a href = "{{ route('pagina-notizie') }}"> News </a>
   </div>
 
-
-
-
-
-
-
 </header>
