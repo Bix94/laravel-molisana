@@ -7,12 +7,14 @@
   <title>Document</title>
 </head>
 <body>
-
+  {{-- timbro header pagine --}}
   @include( 'partials.header' )
   <main>
+    {{-- aggiunta sezione --}}
     @yield( 'content' )
   </main>
-  @include( 'footer.header' )
+  {{-- timbro footer pagine --}}
+  @include( 'partials.footer' )
 
 
 </body>

@@ -15,7 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
-Route::get('/notizie', function () {
-    return view('news');
-});
+    // name serve a reindirizzare href
+})->name('pagina-prova');
+
+Route::get('/try', function () {
+    return view('prova');
+})->name('pagina-prova');
+
+Route::get('/prodotti', function () {
+    return view('products');
+})->name('pagina-prodotti');
