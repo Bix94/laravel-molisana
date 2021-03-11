@@ -1,9 +1,64 @@
 footer{
-  text-align: center;
-  height: 100px;
-  background-color: $menu-hover-color;
+  background-color: white;
 
-  h5{
-    padding-top: 40px;
+  li{
+    list-style: none;
   }
+}
+
+.centro{
+  padding-top: 100px;
+  @include flex(row,flex-start,center);
+  .prodotti, .limited, .news, .logo {
+    margin-top: 30px;
+  }
+  .box{
+    width: calc(100% / 4);
+
+    .limited h3 , .news h3{
+      color: #808080;
+    }
+    & .limited h3:hover , .news h3:hover{
+      color: #0d2240;
+    }
+
+    h3{
+      color: #0d2240;
+      text-transform: uppercase;
+    }
+    ul{
+      margin-top: 15px;
+      font-size: 18px;
+      li{
+        color: #c2c2c2;
+        margin-top: 5px;
+      }
+    }
+    .info{
+      text-transform: uppercase;
+      font-size: 13px;
+      p{
+        color: #c2c2c2;
+        margin-top: 5px;
+      }
+      span{
+        color: #808080;
+      }
+    }
+  }
+  .logo{
+    @include flex(column,flex-start,center);
+  }
+
+}
+.foot{
+  margin-top: 50px;
+  img{
+    height: 180px;
+    max-width: 100%;
+  }
+}
+
+#und{
+  text-decoration: underline;
 }

@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.centro {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 header {
   text-align: center;
 }
@@ -65,12 +70,88 @@ header a:hover {
 }
 
 footer {
-  text-align: center;
-  height: 100px;
-  background-color: #b3e5fc;
+  background-color: white;
 }
 
-footer h5 {
-  padding-top: 40px;
+footer li {
+  list-style: none;
+}
+
+.centro {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.centro .prodotti,
+.centro .limited,
+.centro .news,
+.centro .logo {
+  margin-top: 30px;
+}
+
+.centro .box {
+  width: calc(100% / 4);
+}
+
+.centro .box .limited h3,
+.centro .box .news h3 {
+  color: #808080;
+}
+
+.centro .box .limited h3:hover,
+.centro .box .news h3:hover {
+  color: #0d2240;
+}
+
+.centro .box h3 {
+  color: #0d2240;
+  text-transform: uppercase;
+}
+
+.centro .box ul {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.centro .box ul li {
+  color: #c2c2c2;
+  margin-top: 5px;
+}
+
+.centro .box .info {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.centro .box .info p {
+  color: #c2c2c2;
+  margin-top: 5px;
+}
+
+.centro .box .info span {
+  color: #808080;
+}
+
+.centro .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.foot {
+  margin-top: 50px;
+}
+
+.foot img {
+  height: 180px;
+  max-width: 100%;
+}
+
+#und {
+  text-decoration: underline;
 }
 

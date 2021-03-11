@@ -42,7 +42,7 @@ Route::get('/prodotti', function () {
         'corta' =>   $pasta_corta,
         'cortissima' =>  $pasta_cortissima
       ]
-    ]
+    ];
 
     return view('products', $data);
 })->name('pagina-prodotti');
@@ -63,7 +63,7 @@ Route::get('/dettaglio/{id}', function ($id){
   }
   else{
     // funzione segnalazione errore
-    abort('404')
-  }
+    abort('404');
+  };
 
 })->name('pagina-dettagli');
