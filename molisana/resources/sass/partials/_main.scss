@@ -1,43 +1,53 @@
-// dentro sass prendo img da RESOURCES
-  .jumbo{
-  // esco da cartella partials e cartella sass con ../
-  background-image: url('../../img/molisana-home.jpg');
-  background-position: center;
-  background-size: cover;
-  height: 500px;
+main{
   margin-top: 10px;
-}
-
-
-.schede{
-  margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-
-  .scheda{
-    position: relative;
-    width: calc(100% / 3);
-
-    &:hover{
-      opacity: 0.5;
+  background-color: $sfondo-main-color;
+  // dentro sass prendo img da RESOURCES
+    .jumbo{
+    // esco da cartella partials e cartella sass con ../
+    background-image: url('../../img/molisana-home.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    margin-top: 10px;
+  }
+    h2{
+      text-align: center;
+      text-transform: uppercase;
+      padding: 20px 0px;
+      font-size: 50px;
+      color: #404040;
     }
-    img{
-      max-width: 100%;
-    }
-    .over{
-      display: none;
-      position: absolute;
-      top: 50%;
-	    transform: translateY(-30px);
-      left: 50px;
-    }
-    &:hover .over{
-      display: block;
-    }
-    a{
-      text-decoration: none;
-      color: black;
-      font-size: 30px;
+    .schede{
+      display: flex;
+      flex-wrap: wrap;
+
+      .scheda{
+        padding: 10px 5px;
+        position: relative;
+        width: calc(100% / 3);
+
+        &:hover{
+          opacity: 0.5;
+        }
+        img{
+          max-width: 100%;
+        }
+        .over{
+          display: none;
+          position: absolute;
+          top: 47%;
+          left: 10%;
+        }
+        &:hover .over{
+          display: block;
+        }
+        a{
+          text-decoration: none;
+          color: black;
+          font-size: 30px;
+          justify-content: center;
+          align-items: center;
+        }
+      }
     }
   }
-}

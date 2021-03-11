@@ -57,7 +57,8 @@ Route::get('/dettaglio/{id}', function ($id){
     // collego posizione prodotto array all id segnaposto per determinare PRODOTTO
     $prodotto = $pasta[$id];
     // Passo chiave con array associativo per andare a lavorare e passare PRODOTTO
-    $data = [ 'formato' => $prodotto ];
+    // a sezione dettagli
+    $data = [ 'prodotto' => $prodotto ];
 
     return view('dettagli', $data);
   }

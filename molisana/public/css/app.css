@@ -24,7 +24,12 @@ header a:hover {
   background-color: #b3e5fc;
 }
 
-.jumbo {
+main {
+  margin-top: 10px;
+  background-color: #daedf3;
+}
+
+main .jumbo {
   background-image: url(/images/molisana-home.jpg?cb7db241726fb646d7e1c8553429c07c);
   background-position: center;
   background-size: cover;
@@ -32,41 +37,50 @@ header a:hover {
   margin-top: 10px;
 }
 
-.schede {
-  margin-top: 10px;
+main h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0px;
+  font-size: 50px;
+  color: #404040;
+}
+
+main .schede {
   display: flex;
   flex-wrap: wrap;
 }
 
-.schede .scheda {
+main .schede .scheda {
+  padding: 10px 5px;
   position: relative;
   width: calc(100% / 3);
 }
 
-.schede .scheda:hover {
+main .schede .scheda:hover {
   opacity: 0.5;
 }
 
-.schede .scheda img {
+main .schede .scheda img {
   max-width: 100%;
 }
 
-.schede .scheda .over {
+main .schede .scheda .over {
   display: none;
   position: absolute;
-  top: 50%;
-  transform: translateY(-30px);
-  left: 50px;
+  top: 47%;
+  left: 10%;
 }
 
-.schede .scheda:hover .over {
+main .schede .scheda:hover .over {
   display: block;
 }
 
-.schede .scheda a {
+main .schede .scheda a {
   text-decoration: none;
   color: black;
   font-size: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
