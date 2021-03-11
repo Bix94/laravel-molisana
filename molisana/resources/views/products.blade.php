@@ -4,15 +4,19 @@
 
 @section('content')
 
+  @foreach ($formati as $tipo => $formato)
+    <h2> {{ $tipo }} </h2>
   <div class="schede">
-    @foreach ($formati as $formato)
+    @foreach ($formati as $key => $pasta)
     <div class="scheda">
-      <img src="{{$formato['src']}}" alt="{{ $formato['titolo'] }}">
+      <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
       <div class="over">
-        <a href="#"> {{ $formato['titolo'] }} </a>
+        {{-- collego il [titolo] alla rotta/link pagina dettagli --}}
+        {{-- devo passare ID come segnaposto => KEY per ottenere solo un link per ogni prodotto  --}}
+        <a href="{{ route('pagina-dettagli', [$id => $key]) }}"> {{ $pasta['titolo'] }} </a>
       </div>
     </div>
   @endforeach
   </div>
-
+  @endforeach
 @endsection
