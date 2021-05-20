@@ -1,8 +1,9 @@
-//importo tutti partials
+// @import 'node_modules/bootstrap/scss/bootstrap';
 
+//importo tutti partials
 @import 'partials/_variables';
 @import 'partials/_commons';
-@import "partials/_mixins";
+@import 'partials/_mixins';
 @import 'partials/_header';
 @import 'partials/_main';
 @import 'partials/_footer';

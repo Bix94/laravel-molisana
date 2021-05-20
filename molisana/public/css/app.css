@@ -21,7 +21,7 @@ header a {
 }
 
 header a:hover {
-  background-color: #b3e5fc;
+  background-color: #b8dae6;
 }
 
 main {
@@ -35,6 +35,11 @@ main .jumbo {
   background-size: cover;
   height: 500px;
   margin-top: 10px;
+}
+
+main h1 {
+  text-align: center;
+  padding: 50px 0;
 }
 
 main h2 {
@@ -81,6 +86,24 @@ main .schede .scheda a {
   font-size: 30px;
   justify-content: center;
   align-items: center;
+}
+
+main .fix img {
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 50px;
+}
+
+main .descrizione {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+main .descrizione .testo {
+  width: 50%;
+  line-height: 1.6;
+  font-size: 20px;
 }
 
 footer {

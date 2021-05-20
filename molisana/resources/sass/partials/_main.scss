@@ -10,6 +10,10 @@ main{
     height: 500px;
     margin-top: 10px;
   }
+    h1{
+      text-align: center;
+      padding: 50px 0;
+    }
     h2{
       text-align: center;
       text-transform: uppercase;
@@ -50,4 +54,22 @@ main{
         }
       }
     }
+    .fix{
+      img{
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 50px;
+      }
+    }
+    .descrizione{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 50px;
+      .testo{
+        width: 50%;
+        line-height: 1.6;
+        font-size: 20px;
+      }
+    }
+
   }
